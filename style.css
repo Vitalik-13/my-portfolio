@@ -876,10 +876,10 @@ canvas {
     opacity: 0;
   }
   .slick-arrow.slick-prev {
-    left: 35%;
+    left: 32%;
   }
   .slick-arrow.slick-next {
-    right: 35%;
+    right: 32%;
   }
   .slider-item {
     margin: 0;
