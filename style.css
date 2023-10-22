@@ -425,6 +425,12 @@ canvas {
     font-size: 3rem;
     line-height: 4.5rem;
   }
+  .my-main-foto {
+    width: 100%;
+  }
+  .my-main-foto-container::before {
+    left: 12%;
+  }
 }
 @media (max-width: 615px) {
   .main-paragraph {
@@ -834,5 +840,8 @@ canvas {
   }
   .slick-arrow.slick-next {
     right: 35%;
+  }
+  .slider-item {
+    margin: 0;
   }
 }
