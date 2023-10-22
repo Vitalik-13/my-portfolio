@@ -240,7 +240,7 @@ a {
   position: absolute;
   top: 13%;
   right: 2%;
-  max-width: 585px;
+  max-width: 560px;
 }
 .my-main-foto-container::before {
   position: absolute;
@@ -904,5 +904,9 @@ canvas {
 @media (max-width: 550px) {
   .text {
     margin-top: 650px;
+  }
+
+  .my-main-foto-container {
+    max-width: 450px;
   }
 }
