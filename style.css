@@ -258,7 +258,7 @@ a {
   position: absolute;
   width: 56%;
   bottom: 0%;
-  left: 7%;
+  left: 4%;
   right: 0;
   height: 10px;
   content: "";
@@ -271,7 +271,7 @@ canvas {
   height: 50%;
   position: absolute;
   bottom: 40%;
-  right: 44%;
+  right: 49%;
   z-index: -1;
 }
 @keyframes draw {
@@ -281,7 +281,7 @@ canvas {
 }
 .my-main-foto {
   object-fit: contain;
-  width: 91%;
+  width: 60%;
   height: 100%;
 }
 .paragraph-description {
@@ -443,7 +443,7 @@ canvas {
   }
   .my-main-foto-container {
     top: 20%;
-    left: 15%;
+    left: 20%;
     width: 100%;
   }
   .main-title {
@@ -492,10 +492,11 @@ canvas {
     line-height: 4.5rem;
   }
   .my-main-foto {
-    width: 100%;
+    width: 50%;
   }
+
   .my-main-foto-container::before {
-    left: 12%;
+    left: -2%;
   }
 }
 @media (max-width: 615px) {
@@ -897,6 +898,9 @@ canvas {
 @media (max-width: 550px) {
   .slick-arrow {
     top: 300px;
+  }
+  .my-main-foto-container {
+    left: 25%;
   }
   .silider .slick-dots {
     opacity: 0;
