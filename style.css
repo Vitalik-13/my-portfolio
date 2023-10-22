@@ -893,6 +893,7 @@ canvas {
     font-size: 1.6rem;
     letter-spacing: 0.4rem;
   }
+
   .site {
     font-size: 0.8rem;
   }
@@ -905,7 +906,9 @@ canvas {
   .text {
     margin-top: 650px;
   }
-
+  .light-button {
+    display: none;
+  }
   .my-main-foto-container {
     width: 390px;
   }
