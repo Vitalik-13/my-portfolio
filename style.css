@@ -916,4 +916,19 @@ canvas {
   .technogies {
     margin-bottom: 50px;
   }
+  .main-title {
+    line-height: 2.5rem;
+  }
+  .text {
+    margin: 76% auto 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  .frontender {
+    font-size: 1.6rem;
+    letter-spacing: 0.4rem;
+  }
+  .site {
+    font-size: 0.8rem;
+  }
 }
