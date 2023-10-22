@@ -20,7 +20,6 @@ a {
 .section-one {
   min-height: 100vh;
 }
-
 .header {
   position: fixed;
   left: 0;
@@ -35,7 +34,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .burger {
   position: relative;
   width: 40px;
@@ -44,11 +42,9 @@ a {
   cursor: pointer;
   display: block;
 }
-
 .burger input {
   display: none;
 }
-
 .burger span {
   display: none;
   position: absolute;
@@ -61,35 +57,29 @@ a {
   transform: rotate(0deg);
   transition: 0.25s ease-in-out;
 }
-
 .burger span:nth-of-type(1) {
   top: 0px;
   transform-origin: left center;
 }
-
 .burger span:nth-of-type(2) {
   top: 50%;
   transform: translateY(-50%);
   transform-origin: left center;
 }
-
 .burger span:nth-of-type(3) {
   top: 100%;
   transform-origin: left center;
   transform: translateY(-100%);
 }
-
 .burger input:checked ~ span:nth-of-type(1) {
   transform: rotate(45deg);
   top: 0px;
   left: 5px;
 }
-
 .burger input:checked ~ span:nth-of-type(2) {
   width: 0%;
   opacity: 0;
 }
-
 .burger input:checked ~ span:nth-of-type(3) {
   transform: rotate(-45deg);
   top: 28px;
@@ -131,7 +121,6 @@ a {
     transform: translate(-100%);
   }
 }
-
 .container {
   margin: 0 auto;
   max-width: 1470px;
@@ -249,16 +238,15 @@ a {
 }
 .my-main-foto-container {
   position: absolute;
-  top: 14%;
-  right: -22%;
-  width: 65%;
+  top: 13%;
+  right: 2%;
+  max-width: 585px;
 }
-
 .my-main-foto-container::before {
   position: absolute;
-  width: 56%;
+  width: 83%;
   bottom: 0%;
-  left: 4%;
+  left: 7%;
   right: 0;
   height: 10px;
   content: "";
@@ -267,11 +255,11 @@ a {
   transition: all 0.3s ease;
 }
 canvas {
-  width: 50%;
+  width: 100%;
   height: 50%;
   position: absolute;
   bottom: 40%;
-  right: 49%;
+  right: 13%;
   z-index: -1;
 }
 @keyframes draw {
@@ -281,7 +269,7 @@ canvas {
 }
 .my-main-foto {
   object-fit: contain;
-  width: 60%;
+  max-width: 92%;
   height: 100%;
 }
 .paragraph-description {
@@ -313,7 +301,6 @@ canvas {
   color: var(--color);
   z-index: 1;
 }
-
 .show-description::before,
 .show-description::after {
   content: "";
@@ -327,31 +314,25 @@ canvas {
   background-color: var(--color);
   transition: 1s ease;
 }
-
 .show-description::before {
   top: -1em;
   left: -1em;
 }
-
 .show-description::after {
   left: calc(100% + 1em);
   top: calc(100% + 1em);
 }
-
 .show-description:hover::before,
 .show-description:hover::after {
   height: 410px;
   width: 410px;
 }
-
 .show-description:hover {
   color: rgb(10, 25, 30);
 }
-
 .show-description:active {
   filter: brightness(0.8);
 }
-
 .my-ten-punct-descriptions {
   margin-left: 3.125rem;
   margin-bottom: 3.125rem;
@@ -391,7 +372,6 @@ canvas {
   color: white;
   flex-shrink: 0;
 }
-
 .title-line {
   margin-top: 0.938rem;
   width: 100%;
@@ -429,22 +409,25 @@ canvas {
   color: #ffffff99;
   line-height: 25px;
 }
-@media (max-width: 1370px) {
-  .my-main-foto-container {
-    top: 20%;
-  }
-}
+
 @media (max-width: 1100px) {
   .text {
-    margin: 80% auto 0 auto;
+    margin: 800px auto 0 auto;
     text-align: center;
     max-width: 100%;
     padding: 10px 40px;
   }
+  canvas {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
   .my-main-foto-container {
     top: 20%;
-    left: 20%;
     width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
   .main-title {
     margin: 15% auto 0 auto;
@@ -454,7 +437,6 @@ canvas {
     margin: 0 auto;
     width: 0;
   }
-
   @keyframes typeWriter {
     to {
       width: 100%;
@@ -487,16 +469,15 @@ canvas {
   .main-paragraph {
     font-size: 3rem;
   }
+  .my-main-foto-container {
+    left: 5%;
+  }
   .main-title {
     font-size: 3rem;
     line-height: 4.5rem;
   }
   .my-main-foto {
-    width: 50%;
-  }
-
-  .my-main-foto-container::before {
-    left: -2%;
+    width: 100%;
   }
 }
 @media (max-width: 615px) {
@@ -536,7 +517,6 @@ canvas {
     width: 100%;
   }
 }
-
 .reverse {
   display: flex;
   margin-top: 100px;
@@ -554,7 +534,6 @@ canvas {
   padding-bottom: 20px;
   display: flex;
   align-items: center;
-
   max-width: 800px;
 }
 .father {
@@ -575,7 +554,6 @@ canvas {
   background-color: #26a32c;
   border-radius: 10px;
 }
-
 @keyframes widthAnimation {
   0% {
     width: 0;
@@ -587,7 +565,6 @@ canvas {
 .three {
   animation: widthAnimationthree 4s linear forwards;
 }
-
 @keyframes widthAnimationthree {
   0% {
     width: 0;
@@ -651,7 +628,6 @@ canvas {
   align-items: center;
   justify-content: center;
 }
-
 .icon-slider {
   max-width: 100%;
   filter: grayscale(100%);
@@ -752,7 +728,6 @@ canvas {
   margin-bottom: 50px;
   gap: 45px;
 }
-
 .light-button button.bt {
   position: relative;
   height: 200px;
@@ -762,7 +737,6 @@ canvas {
   background: none;
   border: none;
 }
-
 .light-button button.bt .button-holder {
   display: flex;
   flex-direction: column;
@@ -778,13 +752,11 @@ canvas {
   outline: #0f0f0f 2px solid;
   outline-offset: 20;
 }
-
 .light-button button.bt .button-holder svg {
   height: 50px;
   fill: #0f0f0f;
   transition: 300ms;
 }
-
 .light-button button.bt .light-holder {
   position: absolute;
   height: 200px;
@@ -793,7 +765,6 @@ canvas {
   flex-direction: column;
   align-items: center;
 }
-
 .light-button button.bt .light-holder .dot {
   position: absolute;
   top: 0;
@@ -803,7 +774,6 @@ canvas {
   border-radius: 10px;
   z-index: 2;
 }
-
 .light-button button.bt .light-holder .light {
   position: absolute;
   top: 0;
@@ -812,17 +782,14 @@ canvas {
   clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
   background: transparent;
 }
-
 .light-button button.bt:hover .button-holder svg {
   fill: rgb(38, 163, 44, 1);
 }
-
 .light-button button.bt:hover .button-holder {
   color: rgba(38, 163, 44, 1);
   outline: rgba(38, 163, 44, 1) 2px solid;
   outline-offset: 2px;
 }
-
 .light-button button.bt:hover .light-holder .light {
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -899,9 +866,6 @@ canvas {
   .slick-arrow {
     top: 300px;
   }
-  .my-main-foto-container {
-    left: 25%;
-  }
   .silider .slick-dots {
     opacity: 0;
   }
@@ -923,16 +887,22 @@ canvas {
   .main-title {
     line-height: 2.5rem;
   }
-  .text {
-    margin: 85% auto 0 auto;
-  }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .frontender {
     font-size: 1.6rem;
     letter-spacing: 0.4rem;
   }
   .site {
     font-size: 0.8rem;
+  }
+
+  .my-main-foto-container {
+    right: 0;
+  }
+}
+@media (max-width: 550px) {
+  .text {
+    margin-top: 650px;
   }
 }
