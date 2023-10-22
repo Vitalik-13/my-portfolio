@@ -857,7 +857,9 @@ canvas {
     width: 80%;
     right: 15%;
   }
-
+  .line {
+    top: 5.4rem;
+  }
   .silider .slick-dots {
     right: 40%;
   }
@@ -899,7 +901,9 @@ canvas {
     font-size: 1.6rem;
     letter-spacing: 0.4rem;
   }
-
+  .line {
+    top: 4.9rem;
+  }
   .site {
     font-size: 0.8rem;
   }
