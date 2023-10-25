@@ -222,3 +222,11 @@ function scrollElement(e) {
     });
   }
 }
+
+const listsMenu = document.querySelectorAll(".list-menu");
+listsMenu.forEach((list) =>
+  list.addEventListener("click", () => {
+    menu.classList.remove("plus");
+    burgerMenu.checked = false;
+  })
+);
