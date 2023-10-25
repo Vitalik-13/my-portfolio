@@ -256,11 +256,11 @@ a {
 }
 
 canvas {
-  width: 90%;
+  width: 80%;
   height: 80%;
   position: absolute;
   bottom: 0%;
-  right: 3%;
+  right: 13%;
   z-index: -1;
 }
 @keyframes draw {
@@ -951,5 +951,10 @@ canvas {
   }
   .my-main-foto-container {
     width: 390px;
+  }
+  @media (max-width: 400px) {
+  }
+  .my-main-foto-container {
+    width: 320px;
   }
 }

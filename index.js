@@ -149,7 +149,7 @@ const cw = (c.width = innerWidth * 0.4);
 const ch = (c.height = innerHeight); //*0.9
 const dots = Array(750);
 const dur = 25;
-const hue = 105;
+const color = "#26a32c"; // Встановлення коліру за HEX-кодом
 const mPos = { x: cw / 2, y: ch };
 
 c.onpointermove = (e) => gsap.to(mPos, { x: e.offsetX, y: e.offsetY });
@@ -164,12 +164,7 @@ for (let i = 0; i < dots.length; i++) {
 
 function drawDot(x, y, r) {
   const dist = Math.abs(x - mPos.x) + Math.abs(y - mPos.y);
-  ctx.fillStyle =
-    "hsl(" +
-    hue +
-    ",100%," +
-    Math.max(1 - dist / (dots.length - 1), 0.05) * 80 +
-    "%)";
+  ctx.fillStyle = color;
   ctx.beginPath();
   ctx.arc(x, y, r, 0, 2 * Math.PI);
   ctx.fill();
