@@ -206,3 +206,19 @@ burgerMenu.addEventListener("click", () => {
     line.classList.remove("hide");
   }
 });
+
+let link = document.querySelectorAll(".menu-link");
+link.forEach((item) => {
+  item.addEventListener("click", scrollElement);
+});
+
+function scrollElement(e) {
+  e.preventDefault();
+  let targetId = this.getAttribute("href");
+  let targetElement = document.querySelector(targetId);
+  if (targetElement) {
+    targetElement.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+}
