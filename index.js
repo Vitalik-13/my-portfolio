@@ -192,3 +192,17 @@ gsap
     stagger: { from: "random", amount: dur, repeat: -1 },
   })
   .seek(dur);
+
+// burger
+const line = document.querySelector(".line");
+const burgerMenu = document.querySelector("#burger");
+const menu = document.querySelector(".menu");
+burgerMenu.addEventListener("click", () => {
+  if (burgerMenu.checked) {
+    menu.classList.add("plus");
+    line.classList.add("hide");
+  } else {
+    menu.classList.remove("plus");
+    line.classList.remove("hide");
+  }
+});
