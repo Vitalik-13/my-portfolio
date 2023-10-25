@@ -636,9 +636,9 @@ canvas {
 .show {
   display: block;
 }
-.hide {
+/* .hide {
   display: none;
-}
+} */
 .silider {
   position: relative;
   overflow: hidden;
@@ -696,6 +696,7 @@ canvas {
   position: absolute;
   right: 0;
 }
+
 .slick-arrow.slick-next::after {
   content: "";
   position: absolute;
@@ -952,9 +953,12 @@ canvas {
   .my-main-foto-container {
     width: 390px;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 390px) {
   }
   .my-main-foto-container {
     width: 320px;
+  }
+  .main-paragraph {
+    font-size: 28px;
   }
 }
