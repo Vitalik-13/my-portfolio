@@ -223,5 +223,6 @@ listsMenu.forEach((list) =>
   list.addEventListener("click", () => {
     menu.classList.remove("plus");
     burgerMenu.checked = false;
+    line.classList.remove("hide");
   })
 );

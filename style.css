@@ -909,7 +909,7 @@ canvas {
     display: flex;
     gap: 0 20px;
     justify-content: center;
-    margin: -50px 15px 50px 0;
+    margin: -50px 0px 50px 0;
   }
   .slick-arrow {
     top: 300px;
