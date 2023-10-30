@@ -840,6 +840,9 @@ canvas {
   color: #ffffff99;
   text-align: center;
 }
+.social-network-from-fone {
+  display: none;
+}
 @media (max-width: 490px) {
   .my-main-foto-container {
     top: 15%;
@@ -902,6 +905,12 @@ canvas {
   }
 }
 @media (max-width: 550px) {
+  .social-network-from-fone {
+    display: flex;
+    gap: 0 20px;
+    justify-content: center;
+    margin: -50px 0 50px 0;
+  }
   .slick-arrow {
     top: 300px;
   }
