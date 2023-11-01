@@ -239,14 +239,14 @@ a {
 .my-main-foto-container {
   position: absolute;
   top: 13%;
-  right: 0%;
+  right: 5%;
   max-width: 560px;
 }
 .my-main-foto-container::before {
   position: absolute;
-  width: 83%;
-  bottom: 0%;
-  left: 7%;
+  width: 92%;
+  bottom: -1%;
+  left: 0%;
   right: 2%;
   height: 10px;
   content: "";
@@ -420,15 +420,18 @@ canvas {
   }
   canvas {
     left: 0;
-    right: 0;
+    right: 15%;
     margin: 0 auto;
   }
   .my-main-foto-container {
     top: 10%;
     width: 100%;
-    left: 0;
+    left: 9%;
     right: 0;
     margin: 0 auto;
+  }
+  .my-main-foto-container::before {
+    width: 79%;
   }
   .main-title {
     margin: 15% auto 0 auto;
@@ -498,6 +501,9 @@ canvas {
   }
   .my-main-foto-container {
     left: 5%;
+  }
+  .my-main-foto-container::before {
+    width: 92%;
   }
   .main-title {
     font-size: 3rem;
