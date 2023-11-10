@@ -529,6 +529,7 @@ canvas {
   }
   .language {
     width: 0;
+    left: -13px;
   }
   .apsolute {
     opacity: 1;
