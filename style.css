@@ -528,11 +528,11 @@ canvas {
     margin-bottom: 100px;
   }
   .language {
-    left: 0;
+    width: 0;
   }
-  /* .apsolute {
+  .apsolute {
     opacity: 1;
-  } */
+  }
 }
 @media (max-width: 770px) {
   .text {
