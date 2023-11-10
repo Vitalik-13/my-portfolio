@@ -329,7 +329,7 @@ let arrLang = {
     lastText: "2023р. Всі права захищені",
   },
 };
-let lang = "ua"; // за замовчуванням обрана англійська мова
+let lang = "ua";
 document.addEventListener("DOMContentLoaded", function () {
   let translateButtons = document.querySelectorAll(".translate");
 
@@ -342,14 +342,12 @@ document.addEventListener("DOMContentLoaded", function () {
         element.textContent = arrLang[lang][element.getAttribute("key")];
       });
 
-      // Зберегти вибрану мову в localStorage
       localStorage.setItem("selectedLanguage", lang);
 
-      updateButtonText(); // Виклик функції для зміни тексту кнопки при зміні мови
+      updateButtonText();
     });
   });
 
-  // Отримати збережену мову з localStorage та встановити її
   let savedLanguage = localStorage.getItem("selectedLanguage");
   if (savedLanguage) {
     let langElements = document.querySelectorAll(".lang");
@@ -369,7 +367,6 @@ showDescription.addEventListener("click", () => {
 });
 
 function updateButtonText() {
-  // Отримати збережену мову з localStorage та встановити її
   let savedLanguage = localStorage.getItem("selectedLanguage");
   if (savedLanguage) {
     if (hideText.classList.contains("show")) {

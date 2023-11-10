@@ -531,7 +531,7 @@ canvas {
     width: 0;
   }
   .apsolute {
-    opacity: 0;
+    opacity: 1;
   }
 }
 @media (max-width: 770px) {
