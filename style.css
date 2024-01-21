@@ -994,6 +994,9 @@ canvas {
   }
 }
 @media (max-width: 550px) {
+  .title-contact-description {
+    font-size: 2.5rem;
+  }
   .social-network-from-fone {
     display: flex;
     gap: 0 20px;
@@ -1026,6 +1029,9 @@ canvas {
   }
 }
 @media (max-width: 450px) {
+  .title-contact-description {
+    font-size: 2rem;
+  }
   .frontender {
     font-size: 1.6rem;
     letter-spacing: 0.4rem;
