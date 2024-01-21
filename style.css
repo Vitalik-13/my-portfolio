@@ -17,11 +17,12 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .contact-canvas {
   display: none;
 }
 .kontakt-body {
-  position: relative;
+  overflow-x: hidden;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -820,6 +821,7 @@ canvas {
   -fill-color: transparent;
   -webkit-text-fill-color: transparent;
 }
+
 .footeer-container {
   display: flex;
   justify-content: center;
@@ -898,14 +900,17 @@ canvas {
     rgba(255, 255, 255, 0) 100%
   );
 }
+.footer-kontakt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-top: 200px;
+}
 .last-block {
   padding: 20px 0;
   border-top: 1px solid #ffffff99;
   width: 100vw;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 5px;
 }
 .last-paragpath {
   font-size: 16px;
@@ -913,8 +918,8 @@ canvas {
   text-align: center;
 }
 .wrapper-last-block {
-  display: flex;
-  align-items: flex-end;
+  margin-top: auto;
+  align-self: flex-end;
 }
 .social-network-from-fone {
   display: none;
@@ -925,6 +930,7 @@ canvas {
   line-height: 55px;
   font-size: 3rem;
   font-weight: 600;
+  margin: 0 auto;
   text-align: center;
   color: #ffffff;
   background-image: -webkit-linear-gradient(45deg, #ffffff 52%, #26a32c 50%);
