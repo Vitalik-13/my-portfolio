@@ -192,22 +192,6 @@ burgerMenu.addEventListener("click", () => {
   }
 });
 
-let link = document.querySelectorAll(".menu-link");
-link.forEach((item) => {
-  item.addEventListener("click", scrollElement);
-});
-
-function scrollElement(e) {
-  e.preventDefault();
-  let targetId = this.getAttribute("href");
-  let targetElement = document.querySelector(targetId);
-  if (targetElement) {
-    targetElement.scrollIntoView({
-      behavior: "smooth",
-    });
-  }
-}
-
 const listsMenu = document.querySelectorAll(".list-menu");
 listsMenu.forEach((list) =>
   list.addEventListener("click", () => {
@@ -277,6 +261,8 @@ let arrLang = {
     myTechnologes: "TECHNOLOGIES I MASTER",
     myProgect: "MY PROGECT",
     lastText: "2023 y.o. All rights reserved",
+    translatecontakt:
+      "I'm always available, so if you have any questions, feel free to follow the links below.",
   },
   ua: {
     home: "Головна",
@@ -291,6 +277,7 @@ let arrLang = {
     showLess: "Показати менше",
     deskription:
       "Запрошую на свій сайт-портфоліо! Я - Віталік,  Frontend-розробник, і на моєму сайті ви знайдете відображення мого професійного росту. Моя спеціалізація - робота з HTML та CSS, створення структури і дизайну веб-сайтів. Також я володію навичками роботи у Figma, що допомагає легко впроваджувати дизайн в розробку. У своїй практиці використовую JavaScript ES6 і намагаюся постійно покращувати ці навички.",
+
     spanDeckription:
       "Я активно користуюся Git і GitHub для керування версіями та спільної роботи над проектами. Мої робочі досягнення та проекти доступні для перегляду на сайті. Завітайте, і я з радістю відповім на ваші питання та розгляну можливості співпраці над цікавими проектами. Давайте створимо щось вражаюче разом!",
     choice: "ОСЬ ЧОМУ ВАРТО ОБРАТИ МЕНЕ",
@@ -327,6 +314,8 @@ let arrLang = {
     myTechnologes: "ТЕХНОЛОГІЇ ЯКИМИ Я ВОЛДІЮ",
     myProgect: "МОЇ ПРОЕКТИ",
     lastText: "2023р. Всі права захищені",
+    translatecontakt:
+      "Я завжди на зв'язку, якщо в вас виникли якісь питання переходьте за посиланнями нижче",
   },
 };
 let lang = "ua";
