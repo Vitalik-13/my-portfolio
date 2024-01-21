@@ -33,7 +33,7 @@ a {
   color: #ffffff;
 }
 .section-one {
-  min-height: 100vh;
+  margin-bottom: 100px;
 }
 .header {
   position: fixed;
